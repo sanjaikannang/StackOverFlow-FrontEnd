@@ -15,14 +15,14 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Landingpage />} />
-        <Route exact path="/login" element={<Loginpage />} />
-        <Route exact path="/signup" element={<Signuppage />} />
-        <Route exact path="/homepage" element={<Homepage />} />
-        <Route exact path="/askquestion" element={<AskQuestion />} />
-        <Route exact path="/users" element={<Users />} />
-        <Route exact path="/tags" element={<Tags />} />
-        <Route exact path="/PostAnswer/:questionId" element={<PostAnswer />} />
-        <Route exact path="/myprofile" element={<MyProfile />} />
+        <Route path="/login" element={<Loginpage />} />
+        <Route path="/signup" element={<Signuppage />} />
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/askquestion" element={<AskQuestion />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/tags" element={<Tags />} />
+        <Route path="/PostAnswer/:questionId" element={<PostAnswer />} />
+        <Route path="/myprofile" element={<MyProfile />} />
       </Routes>
     </>
   );
