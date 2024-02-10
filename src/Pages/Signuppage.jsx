@@ -42,7 +42,7 @@ const Signuppage = () => {
         setErr(data.error || "Error during signup. Please try again.");
       }
     } catch (error) {
-      console.error("Error during signup:", error);
+      // console.error("Error during signup:", error);
     } finally {
       setLoading(false);
     }
