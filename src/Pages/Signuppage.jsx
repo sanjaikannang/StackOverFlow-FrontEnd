@@ -109,8 +109,12 @@ const Signuppage = () => {
               onClick={handleSignup}
               disabled={loading}
             >
-              {loading && <img alt="" />}
-              {!loading ? "Register" : "Registering..."}
+              {loading && (
+                <div className="flex items-center justify-center">
+                  <div className="animate-spin rounded-full h-7 w-7 border-t-2 border-b-2 border-amber-500 mr-2"></div>
+                </div>
+              )}
+              {!loading ? "Register" : ""}
             </button>
             {err && (
               <p color="error" sx={{ mt: 2 }}>
